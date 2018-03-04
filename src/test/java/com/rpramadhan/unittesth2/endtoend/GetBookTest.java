@@ -1,4 +1,4 @@
-package com.rpramadhan.sbliquibase.test;
+package com.rpramadhan.unittesth2.endtoend;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -6,9 +6,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.TestPropertySource;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.ResultMatcher;
@@ -17,15 +16,14 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.rpramadhan.sbspringdata.main.SBSpringDataTest;
-import com.rpramadhan.sbspringdata.model.Book;
-import com.rpramadhan.sbspringdata.model.Response;
-import com.rpramadhan.sbspringdata.service.IBookService;
+import com.rpramadhan.unittesth2.SpringBootH2Test;
+import com.rpramadhan.unittesth2.model.Book;
+import com.rpramadhan.unittesth2.model.Response;
+import com.rpramadhan.unittesth2.service.IBookService;
 
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = SBSpringDataTest.class)
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = SpringBootH2Test.class)
 @TestPropertySource(locations  = "classpath:application-test.properties")
-@ActiveProfiles("test")
 public class GetBookTest {
 	
 	private MockMvc mockMvc;

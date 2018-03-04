@@ -1,4 +1,4 @@
-package com.rpramadhan.sbspringdata.controller;
+package com.rpramadhan.unittesth2.controller;
 
 import java.util.List;
 
@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.rpramadhan.sbspringdata.model.AuthorCount;
-import com.rpramadhan.sbspringdata.model.Book;
-import com.rpramadhan.sbspringdata.model.Response;
-import com.rpramadhan.sbspringdata.service.IBookService;
+import com.rpramadhan.unittesth2.model.AuthorCount;
+import com.rpramadhan.unittesth2.model.Book;
+import com.rpramadhan.unittesth2.model.Response;
+import com.rpramadhan.unittesth2.service.IBookService;
 
 @RestController
 public class BookController {

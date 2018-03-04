@@ -1,4 +1,4 @@
-package com.rpramadhan.sbliquibase.test;
+package com.rpramadhan.unittesth2.endtoend;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -17,13 +17,13 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.rpramadhan.sbspringdata.main.SBSpringDataTest;
-import com.rpramadhan.sbspringdata.model.Book;
-import com.rpramadhan.sbspringdata.model.Response;
-import com.rpramadhan.sbspringdata.service.IBookService;
+import com.rpramadhan.unittesth2.SpringBootH2Test;
+import com.rpramadhan.unittesth2.model.Book;
+import com.rpramadhan.unittesth2.model.Response;
+import com.rpramadhan.unittesth2.service.IBookService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = SBSpringDataTest.class)
+@SpringBootTest(classes = SpringBootH2Test.class)
 @TestPropertySource(locations  = "classpath:application-test.properties")
 public class UpdateBookTest {
 	

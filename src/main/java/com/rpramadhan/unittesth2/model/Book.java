@@ -1,4 +1,4 @@
-package com.rpramadhan.sbspringdata.model;
+package com.rpramadhan.unittesth2.model;
 
 import java.io.Serializable;
 

@@ -1,9 +1,9 @@
-package com.rpramadhan.sbspringdata.service;
+package com.rpramadhan.unittesth2.service;
 
 import java.util.List;
 
-import com.rpramadhan.sbspringdata.model.AuthorCount;
-import com.rpramadhan.sbspringdata.model.Book;
+import com.rpramadhan.unittesth2.model.AuthorCount;
+import com.rpramadhan.unittesth2.model.Book;
 
 public interface IBookService {
 	
